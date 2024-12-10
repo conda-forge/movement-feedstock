@@ -1,13 +1,14 @@
 {% set name = "movement" %}
-{% set version = "0.0.20" %}
+{% set version = "0.0.21" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/movement-{{ version }}.tar.gz
-  sha256: 17fe41bc380124eb43005821fb81bc7eb50f7e49184e06a60b0d33a261a49870
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/movement-{{ version }}.tar.gz
+  sha256: df45a0ab3f69c5ae6d3b9987888ef4f22808fc00e41983ce4b289efd6651f86b
 
 build:
   entry_points:
@@ -18,13 +19,13 @@ build:
 
 requirements:
   host:
-    - python >=3.10.0
+    - python {{ python_min }}
     - setuptools >=45
     - wheel
     - setuptools-scm >=6.2
     - pip
   run:
-    - python >=3.10.0
+    - python >={{ python_min }}
     - numpy
     - pandas
     - h5py
