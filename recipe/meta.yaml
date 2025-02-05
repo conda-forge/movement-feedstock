@@ -1,5 +1,5 @@
 {% set name = "movement" %}
-{% set version = "0.0.22" %}
+{% set version = "0.0.23" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/movement-{{ version }}.tar.gz
-  sha256: eb556280ec8d61125f629343a8f5e75016abe6b04912504d09e7a12db79e1896
+  sha256: e464601bdbca0601a50dff1d54ecd3b200957b0c17f9a30d1e1371a3c00467fa
 
 build:
   entry_points:
@@ -32,6 +32,7 @@ requirements:
     - attrs
     - pooch
     - tqdm
+    - shapely
     - sleap-io
     - xarray
     - pyyaml
