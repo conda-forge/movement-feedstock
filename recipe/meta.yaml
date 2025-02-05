@@ -32,6 +32,7 @@ requirements:
     - attrs
     - pooch
     - tqdm
+    - shapely
     - sleap-io
     - xarray
     - pyyaml
