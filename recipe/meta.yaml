@@ -48,6 +48,7 @@ requirements:
     - qt-niu
     - pyvideoreader
     - napari
+    - napari_video
     
 
 test:
