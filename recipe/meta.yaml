@@ -1,6 +1,6 @@
 {% set name = "movement" %}
-{% set version = "0.0.23" %}
-{% set python_min = "3.10" %}
+{% set version = "0.1.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/movement-{{ version }}.tar.gz
-  sha256: e464601bdbca0601a50dff1d54ecd3b200957b0c17f9a30d1e1371a3c00467fa
+  sha256: 4604e8ff0bd1cfec4b3dfea1ff4dccecd771f5f0e884d95973f207fa96c77db2
 
 build:
   entry_points:
@@ -45,6 +45,10 @@ requirements:
     - numbagg
     - flox
     - opt_einsum
+    - qt-niu
+    - pyvideoreader
+    - napari
+    
 
 test:
   imports:
