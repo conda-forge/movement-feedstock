@@ -59,6 +59,7 @@ test:
     - movement info
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://movement.neuroinformatics.dev/
