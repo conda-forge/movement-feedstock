@@ -1,5 +1,5 @@
 {% set name = "movement" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/movement-{{ version }}.tar.gz
-  sha256: 4604e8ff0bd1cfec4b3dfea1ff4dccecd771f5f0e884d95973f207fa96c77db2
+  sha256: e7b8262a12531b4ced90ddfae130f78a5c47764db108e4c1e823f96dfc528bd6
 
 build:
   entry_points:
@@ -49,7 +49,7 @@ requirements:
     - pyvideoreader >=0.5.3
     - napari >=0.5.0
     - napari_video
-    
+
 
 test:
   imports:
