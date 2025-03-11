@@ -47,8 +47,9 @@ requirements:
     - opt_einsum
     - qt-niu
     - pyvideoreader >=0.5.3
-    - napari >=0.5.0
     - napari_video
+  run_constrained:
+    - napari >=0.5.0
 
 
 test:
