@@ -1,5 +1,5 @@
 {% set name = "movement" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/movement-{{ version }}.tar.gz
-  sha256: aa213474f8c92aa54cd42e62377e61766214f36ff5e04dd2d283f539f9206495
+  sha256: 2e9ad21480873dc9215ea0d089c8f99e7d70a4b34fa7905ad8a66b930bdb7782
 
 build:
   entry_points:
