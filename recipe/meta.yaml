@@ -48,6 +48,7 @@ requirements:
     - qt-niu
     - pyvideoreader >=0.5.3
     - napari_video
+    - loguru
   run_constrained:
     - napari >=0.5.0
 
