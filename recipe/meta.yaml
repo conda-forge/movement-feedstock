@@ -50,7 +50,7 @@ requirements:
     - napari_video
     - loguru
   run_constrained:
-    - napari >=0.5.0
+    - napari >=0.6.0
 
 
 test:
