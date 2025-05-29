@@ -26,7 +26,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy
+    - numpy >=2.0.0
     - pandas
     - h5py
     - attrs
@@ -49,6 +49,8 @@ requirements:
     - pyvideoreader >=0.5.3
     - napari_video
     - loguru
+    - pynwb
+    - ndx-pose >=0.2.1
   run_constrained:
     - napari >=0.6.0
 
