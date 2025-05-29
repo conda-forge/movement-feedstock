@@ -1,5 +1,5 @@
 {% set name = "movement" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/movement-{{ version }}.tar.gz
-  sha256: 5af89dad5ca95af5cdee68879a59dd04f866ad6e717f97d0fd00d43cc755cf39
+  sha256: 8ebdf6e6ee20500267da65a2c2b317cf86c24f78fa501caaf8928203029f199f
 
 build:
   entry_points:
@@ -26,7 +26,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy
+    - numpy >=2.0.0
     - pandas
     - h5py
     - attrs
@@ -49,6 +49,8 @@ requirements:
     - pyvideoreader >=0.5.3
     - napari_video
     - loguru
+    - pynwb
+    - ndx-pose >=0.2.1
   run_constrained:
     - napari >=0.6.0
 
