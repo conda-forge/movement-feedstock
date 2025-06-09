@@ -35,16 +35,21 @@ requirements:
     - shapely
     - sleap-io
     - xarray
+    - scipy
     - pyyaml
     - pytables
     - matplotlib-base
-    - seaborn
-    - nc-time-axis
-    - scipy
-    - bottleneck
-    - numbagg
-    - flox
-    - opt_einsum
+    - seaborn               # xarray[viz]
+    - nc-time-axis          # xarray[viz]
+    - bottleneck            # xarray[accel]
+    - numbagg               # xarray[accel]
+    - flox                  # xarray[accel]
+    - opt_einsum            # xarray[accel]
+    - netcdf4               # xarray[io]
+    - h5netcdf              # xarray[io]
+    - zarr                  # xarray[io]
+    - fsspec                # xarray[io]
+    - cftime                # xarray[io]
     - qt-niu
     - pyvideoreader >=0.5.3
     - napari_video
