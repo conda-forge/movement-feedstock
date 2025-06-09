@@ -50,13 +50,13 @@ requirements:
     - zarr        
     - fsspec          
     - qt-niu
-    - pyvideoreader >=0.5.3
     - napari_video
     - loguru
     - pynwb
     - ndx-pose >=0.2.1
   run_constrained:
     - napari >=0.6.0
+    - pyvideoreader >=0.5.3
 
 
 test:
