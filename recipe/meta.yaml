@@ -39,17 +39,17 @@ requirements:
     - pyyaml
     - pytables
     - matplotlib-base
-    - seaborn               # xarray[viz]
-    - nc-time-axis          # xarray[viz]
-    - bottleneck            # xarray[accel]
-    - numbagg               # xarray[accel]
-    - flox                  # xarray[accel]
-    - opt_einsum            # xarray[accel]
-    - netcdf4               # xarray[io]
-    - h5netcdf              # xarray[io]
-    - zarr                  # xarray[io]
-    - fsspec                # xarray[io]
-    - cftime                # xarray[io]
+    - seaborn     
+    - nc-time-axis
+    - bottleneck  
+    - numbagg     
+    - flox        
+    - opt_einsum  
+    - netcdf4     
+    - h5netcdf    
+    - zarr        
+    - fsspec      
+    - cftime      
     - qt-niu
     - pyvideoreader >=0.5.3
     - napari_video
