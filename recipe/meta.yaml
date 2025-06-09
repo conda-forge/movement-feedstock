@@ -48,8 +48,7 @@ requirements:
     - netcdf4     
     - h5netcdf    
     - zarr        
-    - fsspec      
-    - cftime      
+    - fsspec          
     - qt-niu
     - pyvideoreader >=0.5.3
     - napari_video
