@@ -1,5 +1,5 @@
 {% set name = "movement" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/movement-{{ version }}.tar.gz
-  sha256: 8ebdf6e6ee20500267da65a2c2b317cf86c24f78fa501caaf8928203029f199f
+  sha256: b129d2ba755665a4144b4d5a78bf791c6a324d928e0b8fd68bf19614115a895b
 
 build:
   entry_points:
@@ -26,7 +26,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy >=2.0.0
+    - numpy >=2.0,<2.3
     - pandas
     - h5py
     - attrs
@@ -35,24 +35,28 @@ requirements:
     - shapely
     - sleap-io
     - xarray
+    - scipy
     - pyyaml
     - pytables
     - matplotlib-base
-    - seaborn
+    - seaborn     
     - nc-time-axis
-    - scipy
-    - bottleneck
-    - numbagg
-    - flox
-    - opt_einsum
+    - bottleneck  
+    - numbagg     
+    - flox        
+    - opt_einsum  
+    - netcdf4     
+    - h5netcdf    
+    - zarr        
+    - fsspec          
     - qt-niu
-    - pyvideoreader >=0.5.3
     - napari_video
     - loguru
     - pynwb
     - ndx-pose >=0.2.1
   run_constrained:
     - napari >=0.6.0
+    - pyvideoreader >=0.5.3
 
 
 test:
