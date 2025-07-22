@@ -51,6 +51,7 @@ requirements:
     - fsspec
     - qt-niu
     - napari_video
+    - qt <6
     - loguru
     - pynwb
     - ndx-pose >=0.2.1
