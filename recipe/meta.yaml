@@ -50,7 +50,7 @@ requirements:
     - zarr
     - fsspec
     - qt-niu
-    - napari_video
+    - napari_video >=0.2.13
     - qt <6
     - loguru
     - pynwb
