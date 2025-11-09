@@ -37,7 +37,7 @@ requirements:
     - xarray
     - scipy
     - pyyaml
-    - pytables
+    - pytables >=3.10.1
     - matplotlib-base
     - seaborn
     - nc-time-axis
@@ -45,7 +45,7 @@ requirements:
     - numbagg
     - flox
     - opt_einsum
-    - netcdf4
+    - netcdf4 <1.7.3
     - h5netcdf
     - zarr
     - fsspec
