@@ -7,7 +7,7 @@ Home: https://movement.neuroinformatics.dev/
 
 Package license: BSD-3-Clause
 
-Summary: Analysis of body movement
+Summary: A Python toolbox for analysing animal body movements across space and time
 
 Current build status
 ====================
