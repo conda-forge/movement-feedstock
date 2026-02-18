@@ -35,7 +35,6 @@ requirements:
     - shapely
     - sleap-io
     - xarray
-    - scipy <1.17
     - pyyaml
     - pytables >=3.10.1
     - matplotlib-base
