@@ -1,5 +1,5 @@
 {% set name = "movement" %}
-{% set version = "0.14.0" %}
+{% set version = "0.15.0" %}
 {% set python_min = "3.11" %}
 {% set python_max = "3.14" %}
 
@@ -9,14 +9,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/movement-{{ version }}.tar.gz
-  sha256: 9e8b15f97eb4b41cc4952add0c9765b24a9e614051a3b6200c8d11806ecb8d3b
+  sha256: a45c234b2ef1ff2f045844cb1bf55baf8d5711d39f38edfecc31be7cb54a6a0f
 
 build:
   entry_points:
     - movement = movement.cli_entrypoint:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
