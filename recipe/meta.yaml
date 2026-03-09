@@ -54,6 +54,7 @@ requirements:
     - loguru
     - pynwb
     - ndx-pose >=0.2.1
+    - jsonschema
   run_constrained:
     - napari >=0.6.0
     - pyvideoreader >=0.5.3
