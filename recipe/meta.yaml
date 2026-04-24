@@ -1,7 +1,7 @@
 {% set name = "movement" %}
-{% set version = "0.15.0" %}
-{% set python_min = "3.11" %}
-{% set python_max = "3.14" %}
+{% set version = "0.16.0" %}
+{% set python_min = "3.12" %}
+{% set python_max = "3.15" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/movement-{{ version }}.tar.gz
-  sha256: a45c234b2ef1ff2f045844cb1bf55baf8d5711d39f38edfecc31be7cb54a6a0f
+  sha256: d5ed55d4971175c4122af966a5d647e9ce59add9984232fc4f08b6db05d9456b
 
 build:
   entry_points:
@@ -55,6 +55,8 @@ requirements:
     - pynwb
     - ndx-pose >=0.2.1
     - jsonschema
+    - orjson
+    - typer >=0.9.0
   run_constrained:
     - napari >=0.6.0
     - pyvideoreader >=0.5.3
